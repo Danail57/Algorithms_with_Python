@@ -1,1 +1,12 @@
+numbers = [int(x) for x in input().split()]
 
+for index in range(len(numbers)):
+    min_number = numbers[index]
+    min_index = index
+    for next_index in range(index + 1, len(numbers)):
+        next_number = numbers[next_index]
+        if next_number < min_number:
+            min_number = next_number
+            min_index = next_index
+    numbers[index], numbers[min_index] = numbers[min_index], numbers[index]
+print(*numbers, sep=" ")
