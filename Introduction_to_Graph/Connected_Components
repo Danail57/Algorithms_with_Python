@@ -8,7 +8,6 @@ def dfs(node, graph, visited, component):
 
     component.append(node)
 
-
 nodes = int(input())
 graph = []
 
