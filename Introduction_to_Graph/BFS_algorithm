@@ -1,6 +1,6 @@
 from collections import deque
 
-def bfs (node, graph, visited):
+def bfs(node, graph, visited):
     if node in visited:
         return
     queue = deque([node])
